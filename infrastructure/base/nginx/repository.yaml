@@ -1,0 +1,8 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: nginx
+  namespace: nginx
+spec:
+  uri: oci:/ghcr.io/nginxinc/charts
+  type: oci
